@@ -24,11 +24,13 @@ public class GradeCalculator {
 		
 		if(score >= 55)
 			return "D";
-	
 
 		if(score >= 50)
 			return "D-";
 
+		if(score >= 40)
+			return "F+";
+		
 		return null;
 	}
 
