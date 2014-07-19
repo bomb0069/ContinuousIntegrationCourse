@@ -3,6 +3,9 @@ package com.sprint3r.cicd.gradecalculator;
 public class GradeCalculator {
 
 	public String cal(int score) {
+
+		if(score > 100)
+			return "Invalid score";		
 		
 		if(score >= 95)
 			return "A+";
