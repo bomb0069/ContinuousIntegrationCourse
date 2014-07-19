@@ -7,7 +7,7 @@ import org.junit.Test;
 import com.sprint3r.cicd.gradecalculator.HelloWorld;
 
 
-public class HelloWorldTestFail {
+public class HelloWorldFailTest {
 
 	@Test
 	public void showHelloWorld() {
