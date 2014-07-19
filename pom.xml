@@ -38,8 +38,31 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<instrumentation>
+						<excludes>
+							<exclude>com/sprint3r/cicd/gradecalculator/**/*Test.class</exclude>
+						</excludes>
+					</instrumentation>
+	                <formats>
+	                    <format>html</format>
+	                    <format>xml</format>
+	                </formats>					
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>clean</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
+		</plugins>
 	</build>
 
 
