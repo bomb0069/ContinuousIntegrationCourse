@@ -4,3 +4,4 @@ Library             Selenium2Library
 *** Test Cases ***
 Test Open Browser
     Open Browser    http://www.google.co.th
+    Close All Browsers
