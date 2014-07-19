@@ -14,11 +14,6 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-    <dependency>
-      <groupId>com.github.markusbernhardt</groupId>
-      <artifactId>robotframework-selenium2library-java</artifactId>
-      <version>1.4.0.6</version>
-    </dependency>
 	</dependencies>
 	<build>
 		<finalName>GradeCalculator</finalName>
@@ -31,18 +26,6 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-      <plugin>
-        <groupId>org.robotframework</groupId>
-        <artifactId>robotframework-maven-plugin</artifactId>
-        <version>1.4.2</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>run</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
