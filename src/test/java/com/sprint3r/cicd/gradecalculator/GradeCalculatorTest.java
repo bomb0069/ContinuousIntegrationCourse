@@ -48,7 +48,7 @@ public class GradeCalculatorTest {
 	}
 
 	@Test
-	public void given_score_40_then_d_plus() {
+	public void given_score_40_then_F_plus() {
 		assertThat(gradeCalculator.cal(40), is("F+"));
 	}
 }
