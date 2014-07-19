@@ -56,4 +56,9 @@ public class GradeCalculatorTest {
 	public void given_score_40_then_F_plus() {
 		assertThat(gradeCalculator.cal(40), is("F+"));
 	}
+
+	@Test
+	public void given_score_more_than_100_then_invalid_score() {
+		assertThat(gradeCalculator.cal(101), is("Invalid score"));
+	}
 }
