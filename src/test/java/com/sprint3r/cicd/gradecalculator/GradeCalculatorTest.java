@@ -25,4 +25,10 @@ public class GradeCalculatorTest {
 	public void given_score_70_then_b() {
 		assertThat(gradeCalculator.cal(70), is("B"));
 	}
+
+	@Test
+	public void given_score_60_then_d_plus() {
+		assertThat(gradeCalculator.cal(60), is("D+"));
+	}
+
 }
