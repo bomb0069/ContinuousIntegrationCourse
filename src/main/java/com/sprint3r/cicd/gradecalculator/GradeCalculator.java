@@ -12,6 +12,9 @@ public class GradeCalculator {
 		
 		if(score >= 80)
 			return "A-";
+
+		if(score >= 70)
+			return "B";
 		return null;
 	}
 
