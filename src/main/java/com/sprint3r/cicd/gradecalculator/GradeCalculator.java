@@ -19,10 +19,13 @@ public class GradeCalculator {
 		if(score >= 65)
 			return "C";
 		
+		if(score >= 60)
+			return "D+";
 		
 		if(score >= 55)
 			return "D";
 	
+
 		return null;
 	}
 
