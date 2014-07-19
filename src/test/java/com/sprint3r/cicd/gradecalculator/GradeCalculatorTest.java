@@ -18,4 +18,9 @@ public class GradeCalculatorTest {
 		assertThat(gradeCalculator.cal(85), is("A"));
 	}	
 	
+	@Test
+	public void given_score_80_then_a_minus() {
+		GradeCalculator gradeCalculator = new GradeCalculator();
+		assertThat(gradeCalculator.cal(80), is("A-"));
+	}
 }
