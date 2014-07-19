@@ -27,6 +27,17 @@ public class GradeCalculatorTest {
 	}
 
 	@Test
+	public void given_score_65_then_c() {
+		assertThat(gradeCalculator.cal(65), is("C"));
+	}
+	
+	
+	@Test
+	public void given_score_55_then_d() {
+		assertThat(gradeCalculator.cal(55), is("D"));
+	}
+	
+	@Test
 	public void given_score_60_then_d_plus() {
 		assertThat(gradeCalculator.cal(60), is("D+"));
 	}
@@ -36,9 +47,13 @@ public class GradeCalculatorTest {
 		assertThat(gradeCalculator.cal(50), is("D-"));
 	}
 
-
 	@Test
 	public void given_score_0_then_f() {
 		assertThat(gradeCalculator.cal(0), is("F"));
+	}
+	
+	@Test
+	public void given_score_40_then_F_plus() {
+		assertThat(gradeCalculator.cal(40), is("F+"));
 	}
 }
