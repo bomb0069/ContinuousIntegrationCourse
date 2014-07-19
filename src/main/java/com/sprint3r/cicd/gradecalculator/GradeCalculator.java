@@ -22,7 +22,7 @@ public class GradeCalculator {
 		if(score >= 50)
 			return "D-";
 
-		return null;
+		return "F";
 	}
 
 }
