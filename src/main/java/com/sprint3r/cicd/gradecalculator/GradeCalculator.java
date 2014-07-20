@@ -18,14 +18,16 @@ public class GradeCalculator {
 	}
 
 	public String cal(int score) {
-		if(score > 100)
-			return "Invalid score";		
+		if(score > 100){
+			return "Invalid score";
+		}
+					
 
 		for (Integer scoreLenght : scoreMap.keySet()) {
-			if(score >= scoreLenght)
-				return scoreMap.get(scoreLenght);
+			if(score >= scoreLenght){
+				return scoreMap.get(scoreLenght);	
+			}
 		}
-		
 		
 		return "F";
 	}
