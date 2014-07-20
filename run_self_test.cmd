@@ -1,1 +1,1 @@
-mvn clean test cobertura:cobertura
+mvn clean test cobertura:cobertura sonar:sonar
